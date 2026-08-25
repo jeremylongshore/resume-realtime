@@ -2,6 +2,8 @@
 
 Real-time collaborative resume builder built with Rust, Leptos SSR + hydration, and Tailwind CSS.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U5S225PTME)
+
 ## Quick Start
 
 ```bash
