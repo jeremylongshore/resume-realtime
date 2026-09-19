@@ -13,7 +13,7 @@ jobs:
     name: Build Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Rust toolchain
         uses: dtolnay/rust-action@stable
@@ -42,7 +42,7 @@ jobs:
           tar -czvf real-time-resume-${{ github.ref_name }}.tar.gz release/
 
       - name: Upload release artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: real-time-resume-${{ github.ref_name }}
           path: real-time-resume-${{ github.ref_name }}.tar.gz
@@ -54,15 +54,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: real-time-resume-${{ github.ref_name }}
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           files: real-time-resume-${{ github.ref_name }}.tar.gz
           generate_release_notes: true
