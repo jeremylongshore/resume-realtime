@@ -2,6 +2,9 @@
 name = "real-time-resume"
 version = "0.1.0"
 edition = "2021"
+# The toolchain is pinned in rust-toolchain.toml (nightly-2024-10-01, an early 1.83 nightly that lacks some 1.82/1.83 std APIs, hence 1.81). Declaring it
+# here lets cargo's MSRV-aware resolver pick dependency versions that compiler can parse.
+rust-version = "1.81"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
