@@ -14,7 +14,7 @@ leptos = { version = "0.6.12" }
 leptos_axum = { version = "0.6.12", optional = true }
 leptos_meta = { version = "0.6.12" }
 leptos_router = { version = "0.6.12" }
-axum = { version = "0.7", optional = true }
+axum = { version = "0.8", optional = true }
 tokio = { version = "1", features = ["rt-multi-thread", "macros"], optional = true }
 tower = { version = "0.4", optional = true }
 tower-http = { version = "0.5", features = ["fs", "trace"], optional = true }
