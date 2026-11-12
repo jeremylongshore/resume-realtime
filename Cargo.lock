@@ -1538,7 +1538,7 @@ dependencies = [
  "leptos_router",
  "thiserror",
  "tokio",
- "tower 0.4.13",
+ "tower 0.5.3",
  "tower-http",
  "tracing",
  "tracing-subscriber",
